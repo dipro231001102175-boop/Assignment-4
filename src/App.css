@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #74b9ff, #a29bfe);
+}
+
+.app {
+  min-height: 100vh;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+h1 {
+  color: white;
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+input {
+  width: 300px;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button {
+  padding: 14px 25px;
+  border: none;
+  border-radius: 8px;
+  background: #0984e3;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0767b1;
+}
+
+.weather-card {
+  background: white;
+  max-width: 450px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.weather-card h2 {
+  font-size: 30px;
+}
+
+.weather-card img {
+  width: 120px;
+}
+
+.weather-card h3 {
+  font-size: 50px;
+  margin: 10px;
+}
+
+.weather-card p {
+  font-size: 18px;
+  margin: 12px;
+}
+
+.loading {
+  color: white;
+  margin: 30px;
+}
+
+.spinner {
+  width: 45px;
+  height: 45px;
+  border: 5px solid white;
+  border-top: 5px solid #0984e3;
+  border-radius: 50%;
+  margin: auto;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.error {
+  background: #ffdddd;
+  color: red;
+  padding: 15px;
+  max-width: 450px;
+  margin: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+
+  h1 {
+    font-size: 32px;
+  }
+
+  form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  button {
+    width: 100%;
+    max-width: 350px;
+  }
+
+}
